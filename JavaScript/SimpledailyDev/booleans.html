@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <script>
+      /*
+      const age = 17;
+      if (age >= 18) {
+        console.log('You can drive');
+      } else {
+        console.log(`You can't drive.`);
+      }
+      */
+      if (6) {
+        console.log('truthy');
+        // ternary operator ? :
+        const result = true ? 'truthy' : 'falsy';
+        console.log(result);
+
+        // Guard operator && (stops early if first conditon is false)
+        const message = 0 && 'hello';
+        console.log(message); 
+
+        // Default operator || (it's short circuit too)
+        const currency = undefined || 'USD';
+        console.log(currency);
+      }
+    </script>
+  </body>
+</html>
+
+
+
