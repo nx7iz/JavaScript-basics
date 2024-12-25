@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      // Object group multiple values together.
+      const product = {
+      /*Property*/       /*Property-value pair*/  
+        name: 'socks',
+        price: 1050
+      };
+      console.log(product);
+      console.log(product.price);
+      product.name = 'cotton socks';
+      console.log(product.name);
+      // To add new property
+      product.color = 'grey';
+      console.log(product);
+      // To delete a property
+      delete product.color;
+      console.log(product);
+
+    </script>
+  </body>
+</html>
