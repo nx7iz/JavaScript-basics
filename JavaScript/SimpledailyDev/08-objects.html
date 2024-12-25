@@ -23,16 +23,37 @@
       // console.log(product);
 
       const product2 = {
-        name: 'shirt'
+        name: 'shirt',
+        'delivery-time': '1 Day',
+        rating:{
+          stars: 4.5,
+          count: 87
+        },
+        fun: function function1() {
+          console.log('Function inside a object aka method');
+        }
       };
+      // .log is a method(console object and log function inside a console object)
       console.log(product2);
       // Dot notation
       console.log(product2.name);
       // Bracket notation
       console.log(product2['name']);
-      /* most preferred to use when we have properties like 'Delivery-time'
+      /* most preferred to use when we have properties like 'delivery-time'
       */
       console.log(product2['delivery-time']);
+      console.log(product2.rating.stars);
+
+      product2.fun();
+
+      // Built-in object JSON(stores and send data btwn computers)
+      // Convert Js code to JSON
+      console.log(JSON.stringify(product2));
+
+      // Convert JSON back to Js object
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));
+
 
     </script>
   </body>
