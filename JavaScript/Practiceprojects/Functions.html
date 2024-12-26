@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Square of a number
+      function calculateSquare(number) {
+        return(number * number);
+        
+      }
+      console.log(calculateSquare(-5));
+      */
+
+      /*
+      Even number
+      function isEven(number) {
+        if (number % 2 === 0) {
+          return true;
+        }
+        return false;
+      }
+      console.log(isEven(2));
+      */
+
+      function power(base, exponent) {
+        let result = base;
+
+        if (exponent === 0) return 1;
+          
+        if (exponent === 1) return base;
+          
+        // for (let i = 1; i < exponent; i++) {
+        //   result *= base;
+        // }
+        // return result;
+        return base ** exponent;
+      }
+
+      console.log(power(2, 3));
+    </script>
+  </body>
+</html>
