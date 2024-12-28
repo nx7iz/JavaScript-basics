@@ -7,6 +7,7 @@
     <script>
       /*
       Square of a number
+
       function calculateSquare(number) {
         return(number * number);
         
@@ -16,6 +17,7 @@
 
       /*
       Even number
+
       function isEven(number) {
         if (number % 2 === 0) {
           return true;
@@ -24,6 +26,9 @@
       }
       console.log(isEven(2));
       */
+
+      /*
+      Power of a number
 
       function power(base, exponent) {
         let result = base;
@@ -36,10 +41,40 @@
         //   result *= base;
         // }
         // return result;
-        return base ** exponent;
+        // return base ** exponent;
+        return base * power(base, exponent - 1);
       }
 
       console.log(power(2, 3));
+      */
+
+      /*
+      Circle Area and Circumference
+
+      function calculateCircle(radius) {
+        const area = 3.14 * (radius * radius);
+        const circumference = 2 * 3.14 * radius;
+        return (`Area: ${area}\nCircumference: ${circumference}`);
+      }
+      console.log(calculateCircle(0.5));
+      */
+
+      function isPrime(number) {
+        if (number === 2) return true;
+        if (number <= 1) return false;
+        
+        for (let i = 2; i < number; i++) {
+          if (number % i === 0) {
+            return false;
+          }
+          return true;
+        }        
+      }
+      console.log(isPrime(7));
+      console.log(isPrime(10));
+      // console.log(isPrime(2));
+      // console.log(isPrime(0));
+
     </script>
   </body>
 </html>
