@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+    <body>
+      <script>
+        /*
+        Person details
+        const person = {
+          name: 'John',
+          age: 26,
+          isStudent: false
+        };
+        function valid() {
+          console.log(person.name);
+          console.log(person.age);
+          if (person.isStudent === true) {
+            return 'John is a student. ';
+          }
+          return 'John is not a student. ';
+        }
+        console.log(valid());
+        */
+        
+        /*
+        Book details
+        const book = {
+          title: `George Orwell’s 1984 on Goodreads`,
+          author: 'Lyndsey',
+          pages: 1520
+        }
+        function bookDetails(book) {
+          console.log(`Title: ${book.title}, Author: ${book.author}, Pages: ${book.pages}`);
+        }
+        bookDetails(book);
+        */
+        
+        /*
+        Student Average
+        const student = {
+          name: 'Alex',
+          maths: 95,
+          english: 91,
+          science: 89
+        }
+        const average = (student.english + student.maths + student.science) / 3;
+        console.log(`Average: ${average}`);
+        */
+
+        /*
+        Car Specifications
+        const car = {
+          name: 'One:1',
+          brand: 'Koenigsegg',
+          model: 2014,
+          price: `$253'200'0`
+        }
+        console.log(car);
+        if (2024 - car.model > 10) {
+          console.log('Car is old but gold.')
+        }
+        */
+
+        const product = {
+          name:'Socks',
+          price:1099,
+          stock: 25
+        }
+          function isInStock() {
+          if (product.name === 'Socks') {
+            console.log('In stock. ');
+            const value = product.price * product.stock;
+            console.log(value);
+          } else {
+            console.log('Not in stock. ');
+          }
+        }
+        isInStock();
+        
+
+      </script>
+    </body>
+  </head>
+</html>
