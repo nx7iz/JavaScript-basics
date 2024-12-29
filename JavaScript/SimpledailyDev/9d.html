@@ -3,18 +3,25 @@
   <head></head>
   <body>
     <input placeholder="Name" class="js-name" onkeydown="
-      if (event.key === 'Enter') {
-        nameElement();
-      }
+      handleKeyDown(event);
       ">
     <button onclick="
       nameElement();
     
-    " class="js-display-name">Submit</button>
+    ">Submit</button>
+    <p class="js-display-name"></p>
+
     <script>
+      function handleKeyDown(event) {
+        if (event.key === 'Enter') {
+          nameElement();
+        }
+      }
+
       function nameElement() {
         const textElement = document.querySelector('.js-name');
-        console.log(`Your name is: ${textElement.value}`);
+        document.querySelector('.js-display-name').innerHTML = `Your name is: ${textElement.value}`;
+        console.log(textElement.value);
       }
     </script>
   </body>
