@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button>9a</button>
+    <button class="js-to-change">9b</button>
+    <p></p>
+
+    <button onclick="
+      // document.querySelector('.js-result').innerHTML = 'You chose: heads';
+      moveElement('heads');
+    " class="js-heads">heads</button>
+
+    <button onclick="
+      // document.querySelector('.js-result').innerHTML = ';
+      moveElement('tails');
+    " class="js-tails">tails</button>
+
+    <p class="js-result"></p>
+    
+    <script>
+      // console.log(document.querySelector('button'));
+      // const change = document.querySelector('.js-to-change');
+      // change.innerHTML = '9b done!';
+
+
+
+      function moveElement(choice) {
+        let result = document.querySelector('.js-result');
+        
+        const heads = document.querySelector('.js-heads');
+        const tails = document.querySelector('.js-tails');
+        
+        if (choice === 'heads') {
+          document.querySelector('.js-result').innerHTML = `You chose: ${choice}`;
+        } 
+        if (choice === 'tails') {
+          document.querySelector('.js-result').innerHTML = `You chose: ${choice}`;
+        }
+
+        }
+
+    
+    </script>
+  </body>
+</html>
