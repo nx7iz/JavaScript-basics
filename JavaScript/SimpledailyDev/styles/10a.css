@@ -1,0 +1,28 @@
+.add-to-cart-button {
+    background-color: rgb(255, 216, 50);
+    border: none;
+    padding: 10px 50px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 25px 25px;
+    border-radius: 50px;
+}
+
+.request-button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 15px 15px;
+}
+
+.schedule-button {
+    background-color: rgb(230, 230, 230);
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
