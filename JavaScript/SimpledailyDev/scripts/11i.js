@@ -252,22 +252,52 @@
       //   }
       //   return result;
       // }
-function removeEgg(foods) {
-  const reversedFoods = foods.reverse();
+// function removeEgg(foods) {
+//   const reversedFoods = foods.reverse();
 
-  const result = [];
-  let removeEggs = 0;
+//   const result = [];
+//   let removeEggs = 0;
 
-  for (let i = 0; i < reversedFoods.length; i++) {
-    if (foods[i] === 'egg' && removeEggs < 2) {
-      removeEggs++;
-      continue;
-    }  
-    // console.log(result);
-    result.push(reversedFoods[i]);
+//   for (let i = 0; i < reversedFoods.length; i++) {
+//     if (foods[i] === 'egg' && removeEggs < 2) {
+//       removeEggs++;
+//       continue;
+//     }  
+//     // console.log(result);
+//     result.push(reversedFoods[i]);
+//   }
+
+//   return result.reverse();
+// }
+// console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham', 'grapes']));
+
+const todoList = [];
+
+renderTodo();
+
+function renderTodo() {
+  let todoHTML = ''
+  for (let i = 0; i < todoList.length; i++) {
+    const todo = todoList[i];
+    let html = `<p>${todo}</p>`;
+    todoHTML += html;
+    
   }
+  document.querySelector('.js-display').innerHTML = todoHTML;
 
-  return result.reverse();
 }
-console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham', 'grapes']));
+function addTodoList() {
+  
+  const inputElement = document.querySelector('.js-todo-list');
+  const name = inputElement.value;
+
+  
+  todoList.push(name);
+  
+  console.log(todoList);
+  
+  inputElement.value = '';
+  renderTodo();
+}
+
 
