@@ -64,41 +64,111 @@
 
   
 
-let todoList = [];
+// let todoList = [{
+//   name: "make dinner",
+//   dueDate: '19-01-2025'
+// }, {
+//   name: "wash dishes",
+//   dueDate: '19-01-2025'
+// }];
 
-renderTodoList()
+// renderTodoList()
+ 
+// function renderTodoList() {
+//   let todoListHTML = '';
 
-function renderTodoList() {
-  let todoListHTML = '';
+//   for (let i = 0; i < todoList.length; i++) {
+//     let todoObject = todoList[i];
+//     // const name = todoObject.name;
+//     // const dueDate = todoObject.dueDate;
+//     // Destructing
+//     const { name, dueDate } = todoObject;
+//     const html = 
+//     /* Push,splice*/
+//     // 3 elements 
+//     `
+//       <div>${name}</div>
+//       <div>${dueDate}</div>
+//       <button class="delete-button" onclick ="
+//         todoList.splice(${i}, ${1});;
+//         renderTodoList();
+//       ">Delete</button>
+//     `;
+//     todoListHTML += html;
+//   }
 
-  for (let i = 0; i < todoList.length; i++) {
-    let todo = todoList[i];
-    const html = 
-    `
-    <p>
-      ${todo} 
-      <button onclick ="
-        todoList.splice(${i}, ${1});;
-        renderTodoList();
-      ">Delete</button>
-    </p>
-    `;
-    todoListHTML += html;
+//   document.querySelector('.js-todo-list').innerHTML = todoListHTML;
+// }
+
+// function addTodo() {
+//   const inputElement = document.querySelector('.js-name-input');
+//   let name = inputElement.value;
+
+//   const dateInputElement = document.querySelector('.js-due-date-input');
+//   const dueDate = dateInputElement.value;
+  
+//   // Short hand property
+//   todoList.push({
+//     name,
+//     dueDate
+// });
+
+//   inputElement.value = '';
+  
+//   renderTodoList();
+// }
+
+
+
+const arrray1 = [1, 2, 3]; 
+// makes a copy of array1 
+const arrray2 = arrray1.slice();
+arrray2.push(4);
+console.log(arrray1)
+console.log(arrray2);
+
+// Destructing
+const [firstValue, secondValue] = [1, 2, 3];
+console.log(firstValue);
+console.log(secondValue);
+
+
+for (let i = 0; i < 11; i++) {
+  if (i % 3 === 0) {
+    continue; // Lets us skip 1 iteration
   }
-
-  document.querySelector('.js-todo-list').innerHTML = todoListHTML;
+  console.log(i);
+  if (i === 8) {
+    break; // Stops the loop early
+  }
 }
 
-  function addTodo() {
-    const inputElement = document.querySelector('.js-name-input');
-    let name = inputElement.value;
-
-    todoList.push(name);
-    console.log(todoList);
-  
-    inputElement.value = '';
-
-
-    renderTodoList();
+let i = 1;
+while (i < 11) {
+  if (i % 3 === 0) {
+    i++; // increment step manually for continue
+    continue;
   }
+  console.log(i);
+  i++
+}
+function doubleArray (nums) {
+
+  let double = [];
+  for (let i = 0; i < nums.length; i++) {
+    const num = nums[i];
+    if (num === 0) {
+      return num;
+    }
+      double.push(num * 2);
+  }
+    return double;
+}
+
+  console.log(doubleArray([1, 1, 3]));
+  doubleArray([2, 2, 5, 0 , 5]);
+
+
+
+
 
