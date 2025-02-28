@@ -59,11 +59,32 @@
 // clearInterval(intervalId);
 
 
-[
-  'make dinner',
-  'wash dishes',
-  'code' 
-].forEach(function(value, index) { // loops through array and display each value in a array
-  console.log(index);
-  console.log(value);
-});
+// [
+//   'make dinner',
+//   'wash dishes',
+//   'code' 
+// ].forEach(function(value, index) { // loops through array and display each value in a array
+//   if (value === 'wash dishes') {
+//     return;
+//   }
+
+//   console.log(index);
+//   console.log(value);
+// });
+
+// ------------------------------------------------------- //
+
+// setTimeout(function() {
+//   console.log('timeout');
+//   console.log('timeout2');
+// }, 3000);
+
+// console.log('next line');
+
+// setInterval(function() {
+//   console.log('interval');
+// } , 3000);
+
+// console.log('next line 2');
+
+
