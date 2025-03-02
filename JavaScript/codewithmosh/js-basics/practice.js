@@ -205,18 +205,134 @@
 //   }
 // }
 
+
 // 11 - Prime Numbers
-showPrime(20);
+// showPrime(100);
 
-function showPrime(limit) {
-  for (let number = 2; number <= limit; number++) 
-    if (isPrime(number)) console.log(number);
+// function showPrime(limit) {
+//   for (let number = 2; number <= limit; number++)
+//     if (isPrime(number)) console.log(number);
+// }
+
+// function isPrime(number) {
+//   for (let factor = 2; factor < number; factor++) 
+//     if (number % factor === 0) 
+//       return false;
+
+//   return true;
+// }
+
+
+// 12 - Min
+// console.log(min(4,9));
+// function min(first, second) {
+//   if (first < second)
+//     return first;
+//   return second;
+// }
+
+
+// 13 - Square
+// console.log(isSquare(100,100));
+// console.log(isSquare(150,200));
+// function isSquare(width, height) {
+//   if (width === height) 
+//     return true
+//   return false;
+// }
+
+
+// 14 - Leap year
+// console.log(isLeapYear(2024)); 
+// console.log(isLeapYear(1900)); 
+// console.log(isLeapYear(2000)); 
+// function isLeapYear(year) {
+//   if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) 
+//     return true;
+//   return false;
+// }
+
+
+// 15 - Reverse String
+// console.log(reverseString('Arceus'));
+
+// function reverseString(str) {
+//   // 03 method
+//   return (str === '') ? '' : reverseString(str.substr(1)) + str.charAt(0);
+
+  // 02 method
+// let newString = '';
+// for (let i = str.length - 1; i >= 0; i--) {
+//   newString += str[i];
+// }
+// return newString;
+
+// 01 method
+// let splitString = str.split('');
+
+// reversedString = reverseArray(splitString);
+// return reversedString;
+// // Splits char into array
+// let splitString = str.split("");
+
+// // Reverses an array
+// let reversedString = splitString.reverse();
+// console.log(reversedString);
+
+// // joins all element of array into string
+// let joinString = reversedString.join("");
+// return joinString;
+
+// let joinString = str.split("").reverse().join("");
+// return joinString;
+// }
+
+
+// function reverseArray(array) {
+//   let reverseArray = '';
+//   for (let i = 0; i < array.length; i++) {
+//     let newarray = array[5 - i];
+//     reverseArray += newarray;
+//   }
+//   return reverseArray;
+// }
+
+// 16 - count vowels
+// console.log(countVowels('Javascript'));
+// function countVowels(str) {
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === 'a' || str[i] === 'e' ||str[i] === 'i' ||str[i] === 'o' ||str[i] === 'u') {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+
+// 17 - Factorial
+// console.log(factorial(5));
+// function factorial(number) {
+//   let fact = 1;
+//   for (let i = 1; i <= number; i++) {
+//     fact *= i;
+//   }
+//   return fact;
+// }
+
+
+// 18 - Fibonacci
+fibonacci(5);
+function fibonacci(number) {
+  let prev = 0;
+  let series = 0;
+  let sum = 1;
+  for (let i = 1; i < number; i++) {
+    prev += sum;
+    series += prev;
+    console.log(series);
+  }
 }
 
-function isPrime(number) {
-  for (let factor = 2; factor < number; factor++)
-    if (number % factor === 0)
-      return false;
 
-  return true;
-}
+
