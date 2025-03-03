@@ -99,9 +99,9 @@
 
 
 // 5 - Even / Odd
-// showNumbers(10);
+// showarray(10);
 
-// function showNumbers(limit) {
+// function showarray(limit) {
 //   for (let i = 0; i <= limit; i++) {
 //     // if (i % 2 === 0) console.log(i, "EVEN");
 //     // else console.log(i, "ODD");
@@ -206,7 +206,7 @@
 // }
 
 
-// 11 - Prime Numbers
+// 11 - Prime array
 // showPrime(100);
 
 // function showPrime(limit) {
@@ -322,17 +322,73 @@
 
 
 // 18 - Fibonacci
-fibonacci(5);
-function fibonacci(number) {
-  let prev = 0;
-  let series = 0;
-  let sum = 1;
-  for (let i = 1; i < number; i++) {
-    prev += sum;
-    series += prev;
-    console.log(series);
-  }
-}
+// fibonacci(5);
+// function fibonacci(number) {
+//   let prev = 0;
+//   let series = 0;
+//   let sum = 1;
+//   for (let i = 1; i < number; i++) {
+//     prev += sum;
+//     series += prev;
+//     console.log(series);
+//   }
+// }
 
 
+// 19 - Second largest number
+// let numbers = [10, 20, 30, 60, 40, 50];
 
+// console.log(secondLargest(numbers));
+
+// function secondLargest(array) {
+//   let largest = array[0];
+//   let index;
+//   let secondLargest = array[0];
+//   for (let i = 1; i < array.length; i++) {
+//     let value = array[i];
+//     if (value > largest) {
+//       largest = value;
+//       index = i;
+//     }
+//   }
+//   array[index] = 0;
+//   for (let i = 1; i < array.length; i++) {
+//     let value = array[i];
+//     if (value > secondLargest) {
+//       secondLargest = value;
+//     }
+//   }
+//   // console.log(array);
+//   return secondLargest;
+// }
+
+
+// 20 - Sum Even array
+// let array = [1, 2, 3, 4, 5, 6, 7];
+// console.log(sumEvenarray(array));
+// function sumEvenarray(array) {
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0) {
+//       sum += array[i];
+//     }
+//   }
+//   return sum;
+// }
+
+
+// 21 - Palindrome
+// console.log(isPalindrome('civic'));
+// console.log(isPalindrome('hello'));
+// console.log(isPalindrome('madam'));
+
+// function isPalindrome(string) {
+//   let newArray = '';
+//   for (let i = string.length - 1; i >= 0; i--) {
+//     newArray += string[i];
+//   }
+//   return (newArray === string) ? true : false;
+
+// //   let reverseString = string.split('').reverse().join('');
+// // return (reverseString === string) ? true : false;
+// }
