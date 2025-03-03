@@ -392,3 +392,20 @@
 // //   let reverseString = string.split('').reverse().join('');
 // // return (reverseString === string) ? true : false;
 // }
+
+
+
+// Factory function
+
+// function createSqaure(area) {
+//   const square = {
+//     area,
+//     draw() {
+//       console.log('draw');
+//     },
+//   }
+//   return square;
+// }
+
+// const sqaure = createSqaure(1);
+// console.log(sqaure);
