@@ -409,3 +409,24 @@
 
 // const sqaure = createSqaure(1);
 // console.log(sqaure);
+
+
+
+// console.log(isPalindrome('hello'));
+// console.log(isPalindrome('madam'));
+// console.log(isPalindrome(12321));
+
+// function isPalindrome(str) {
+//   if (reverseArray(str) === str) 
+//     return true;
+//   return false;
+// }
+
+// function reverseArray(str) {
+//   let newArray = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     newArray += str[i];
+//   }
+//   return newArray;
+// }
+
