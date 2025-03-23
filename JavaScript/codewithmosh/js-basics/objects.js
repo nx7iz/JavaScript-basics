@@ -1,4 +1,203 @@
 
+// const circle = {
+//    radius: 1
+// };
+// circle.color = 'red';
+// circle.draw = function() {}
+
+// delete circle.color;
+// delete circle.draw;
+// console.log(circle);
+
+
+// // Factory Function
+// function createCircle(radius) {
+//    return {
+//       // if key and value == same i.e.(radius: radius) then we use this
+//       radius,
+//       // similarly for method
+//       // draw: function (){
+//       //    console.log('draw');
+//       // }
+//       draw() {
+//          console.log('draw')
+//       }
+//    };
+// }
+// const circle = createCircle(1);
+// // console.log(circle1);
+// // circle1.draw();
+
+// // Constructor Function
+// function Circle(radius) {
+//    this.radius = radius;
+//    this.draw = function() {
+//       console.log('draw');
+//    }
+// } 
+// const Circle1 = new Function('radius', `
+// this.radius = radius;
+// this.draw = function() {
+//    console.log('draw');
+// }
+// `);
+// // const circle1 = new Circle1(1);
+
+// Circle.call({}, 1);
+// Circle.apply({}, [ 1 ]);
+
+// const another = new Circle(1);
+// // console.log(circle.radius);
+
+
+// let x = { value: 10, color: 'red' };
+// let y = x;
+
+// x.value = 20;
+// let obj =  { value: 10 };
+
+// function increase(number) {
+//    number.value++;
+// }
+// increase(obj);
+// console.log(obj);
+
+
+// Enumerating over properties in an objects
+// const circle = {
+//    radius: 1,
+//    draw () {
+//       console.log('draw');
+//    }
+// };
+
+// for (let key in circle) 
+//    console.log(key, circle[key]);
+
+// // for - of --> arrays / maps ... obj is not iterable
+// for (let key of Object.keys(circle))
+//    console.log(key, circle[key]); 
+
+// for (let entry of Object.entries(circle))
+//    console.log(entry);   
+
+// if ('radius' in circle) console.log('yes');
+
+
+
+
+const circle = {
+   radius: 1,
+   draw() {
+   }
+};
+
+// Cloning objects
+// 1. For in
+// const another = {};
+// for (let key in circle)
+//    another[key] = circle[key];
+
+// 2. Object.assign
+// const another = Object.assign({
+//    color: 'yellow'
+// }, circle, x);
+
+// 3. ... --> spread
+// const another = { ...circle };
+// console.log(another);
+
+// Math obj
+// function getRandomArbitary(max, min) {
+//    return Math.random() * (max - min) + min;
+// }
+// console.log(getRandomArbitary(6, 3));
+
+
+// const message = 'hi';
+// // message.
+// const another = new String('hi');
+
+// // Date
+
+// const now = new Date();
+// const date1 = new Date('May 11 2018 09:00');
+// const date2 = new Date(2018, 4, 11, 9);
+// now.getDate();
+// now.setFullYear(2017);
+// console.log(now);
+
+// const address = {
+//    street:'North shore, 24th Avenue zone',
+//    city: 'Los Angeles',
+//    zipCode: 10520
+// };
+
+// let address1 = new Address('q', 'r', 1);
+// let address2 = new Address('q', 'r', 1);
+
+// function Address(street, city, zipCode) {
+//    this.street = street;
+//    this.city = city;
+//    this.zipCode = zipCode; 
+// }
+
+// function areEqual(address1, address2) {
+//    return address1.street === address2.street &&
+//    address1.city === address2.city &&
+//    address1.zipCode === address2.zipCode;
+// }
+
+// console.log(areEqual(address1, address2));
+
+// function areSame(address1, address2) {
+//    return address1 === address2
+// }
+// address1 = address2;
+// console.log(areSame(address1, address2));
+
+
+// const post = {
+//    title: 'a',
+//    body: 'b',
+//    author: 'c',
+//    views:  100,
+//    comments: [
+//       { author: 'a', body: 'b'},
+//       { author: 'c', body: 'd'}
+//    ],
+//    isLive: true
+// };
+
+// console.log(post);
+
+
+// function Post(title, body, author) {
+//    this.title = title;
+//    this.author = author;
+//    this.body = body;
+//    this.views = 0;
+//    this.comments = [];
+//    this.islive = false;
+// }
+
+// const post = new Post('a', 'b', 'c');
+// console.log(post);
+
+// const priceRanges = [
+//    {label: "$", tooltip: "Inexpensive", min: 0, min: 10},
+//    {label: "$$", tooltip: "Moderate", min: 11, min: 20},
+//    {label: "$$$", tooltip: "Pricey", min: 21, min: 40}
+// ];
+
+// console.log(priceRanges);
+
+
+
+
+
+
+
 // address-oriented Programming (OOP)
 
 // const circle = {

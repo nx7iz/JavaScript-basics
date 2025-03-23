@@ -81,14 +81,14 @@
 
 // 415. Add String
 
-let a = '9333852702227987';
-let b = '85731737104263';
-let c = parseInt(a, 10);
-let d = parseInt(b, 10);
-function abc(a, b) {
-  let sum = (parseInt(a) + parseInt(b));
-  return sum.toString();
-}
-console.log(abc(a, b));
+// let a = '9333852702227987';
+// let b = '85731737104263';
+// let c = parseInt(a, 10);
+// let d = parseInt(b, 10);
+// function abc(a, b) {
+//   let sum = (parseInt(a) + parseInt(b));
+//   return sum.toString();
+// }
+// console.log(abc(a, b));
 
 
