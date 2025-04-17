@@ -82,12 +82,110 @@
 // console.log(numbers);
 
 // 5 Combining array
-const first = [1, 2, 3];
-const second = [4, 5, 6];
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
 
-const combined = first.concat(second);
-const slice = combined.slice(3);
-console.log(combined);
-console.log(slice);
+// const combined = first.concat(second);
+// const slice = combined.slice(3);
+// console.log(combined);
+// console.log(slice);
+
+// 6 Combining array using spread -> ... method
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// const combined = [...first, 'a', ...second, 'b'];
+
+// // const copy = combined.slice();
+// const copy = [...combined];
+// console.log(combined);
+// console.log(copy);
+
+// 7 Iterating an array
+// const numbers = [1, 2, 3];
+
+// for (let number of numbers)
+//   console.log(number);
+
+// // for (let number in numbers)
+// //   console.log(number, numbers[number]);
+
+// // Apprach 1
+// // numbers.forEach(function(number) {
+//   //   console.log(number);
+// // });
+
+// // Apprach 2
+// numbers.forEach((number, index) => console.log(index, number));
+
+
+// 8 Joining arrays        
+// const numbers = [1, 2, 3];
+// const joined = numbers.join(',');
+// console.log(joined);
+
+// const messsage = 'This is my first message';
+// const parts = messsage.split(' ');
+// console.log(parts);
+
+// const combined = parts.join('-');
+// console.log(combined);
+
+// 9 Sorting arrays
+
+// const numbers = [2, 3, 1];
+// numbers.sort();
+// console.log(numbers);
+
+// numbers.reverse();
+// console.log(numbers);
+// const courses = [
+//   { id: 1, name: 'Node.js' },
+//   { id: 2, name: 'javaScript' }
+// ];
+// courses.sort(function(a, b) {
+//   // a < b => -1
+//   // a > b => 1
+//   // a === b => 0
+//   const nameA = a.name.toUpperCase();
+//   const nameB = b.name.toUpperCase();
+//   if (nameA < nameB) return -1;
+//   if (nameA > nameB) return 1;
+//   return 0;
+
+// });
+
+// console.log(courses);
+
+
+// 10 Testing elements of an array
+const numbers = [-1, -2, 2, -3];
+// every() -> checks every element
+// some() -> checks if one element is matching the condition
+// const allPositive = numbers.every(function(value) {
+// return value >= 0;
+// });
+
+// const allPositive = numbers.every(value => value >= 0);
+const atLeastOnePositive = numbers.some(value => value >= 0);
+
+console.log(atLeastOnePositive);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
