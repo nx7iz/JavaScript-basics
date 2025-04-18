@@ -159,7 +159,7 @@
 
 
 // 10 Testing elements of an array
-const numbers = [-1, -2, 2, -3];
+// const numbers = [-1, -2, 2, -3];
 // every() -> checks every element
 // some() -> checks if one element is matching the condition
 // const allPositive = numbers.every(function(value) {
@@ -167,9 +167,75 @@ const numbers = [-1, -2, 2, -3];
 // });
 
 // const allPositive = numbers.every(value => value >= 0);
-const atLeastOnePositive = numbers.some(value => value >= 0);
+// const atLeastOnePositive = numbers.some(value => value >= 0);
 
-console.log(atLeastOnePositive);
+// console.log(atLeastOnePositive);
+
+
+// 11 Filtering an array
+// const numbers = [1, -1, 2, 3];
+
+// const filtered = numbers.filter(n => n >= 0);
+
+// console.log(filtered);
+
+
+// 12 Mapping an array
+
+// const numbers = [1, -1, 2, 3];
+// // Chaining
+// const items = numbers
+//   .filter(n => n >= 0)
+//   .map(n => ({ value: n}))
+//   .filter(obj => obj.value > 1)
+//   .map(obj => obj.value);
+
+// // const items = filtered.map(n => ({ value: n}));
+
+// // const html ='<ul>' + items.join('') + '</ul>';
+
+// console.log(items);
+// // console.log(html);
+
+
+// 13 Reducing an array
+
+// const numbers = [1, -1, 2, 3];
+
+// // let sum = 0;
+// // for (let n of numbers)
+// //   sum += n;
+
+
+// const sum = numbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue
+// );
+
+// console.log(sum);
+
+
+
+// Exercise 1 - Array from Range
+// const numbers = arrayFromRange(1, 4);
+
+// console.log(numbers);
+
+// function arrayFromRange(min, max) {
+//   const output = [];
+
+//   for (let i = min; i <= max; i++) {
+//     output.push(i);
+//   }
+
+//   return output;
+// }
+
+
+
+
+
+
+
 
 
 
