@@ -45,6 +45,7 @@
 
 // 3 Remove Elements
 // const numbers = [1, 2, 3, 4];
+
 // End
 // const last = numbers.pop();
 // console.log(numbers);
@@ -173,9 +174,9 @@
 
 
 // 11 Filtering an array
-// const numbers = [1, -1, 2, 3];
+// const number = [1, -1, 2, 3];
 
-// const filtered = numbers.filter(n => n >= 0);
+// const filtered = number.filter(n => n >= 0);
 
 // console.log(filtered);
 
@@ -200,14 +201,14 @@
 
 // 13 Reducing an array
 
-// const numbers = [1, -1, 2, 3];
+// const numbers1 = [1, -1, 2, 3];
 
 // // let sum = 0;
 // // for (let n of numbers)
 // //   sum += n;
 
 
-// const sum = numbers.reduce(
+// const sum = numbers1.reduce(
 //   (accumulator, currentValue) => accumulator + currentValue
 // );
 
@@ -230,28 +231,115 @@
 //   return output;
 // }
 
+ 
+
+// Exercise 2 - Includes
+
+// const numbers = [1, 2, 3, 4];
+
+// console.log(includes(numbers, 2));
+// // for in gives the index
+// // for of gives the value at that index 
+// function includes(array, searchElement) {
+//   for (let element of numbers)
+//     if (searchElement === element) 
+//       return true;
+//   return false;
+// }
+
+
+// Exercise 3 - Except
+// const numbers = [1, 2, 3, 4, 1, 1];
+
+// const output = except(numbers, [1, 2]);
+
+// console.log(numbers);
+// console.log(output);
+
+// function except(array, excluded) {
+//   const output = []; 
+//   for (let element of array)
+//     if (!excluded.includes(element))
+//       output.push(element);
+//   return output ;
+// }
 
 
 
+// Exercise 4 - Moving an Element
 
+// const numbers = [1, 2, 3, 4];
+// const output = move(numbers, 1, 3);
 
+// console.log(output);
 
+// // console.error("Invalid");
 
+// function move(array, index, offset) {
+//   const position = index + offset;
+//   if (position >= array.length || position < 0){
+//     console.error("Invalid offset");
+//     return;
+//   }  
 
+//     let output = [...array];
+//     output.splice(index, 1);
+//     output.splice(position, 0, array[index]);
 
+//   return output;
+// }
 
+// Exercise 5 - Count occurrences
 
+// const numbers = [1, 2, 3, 4, 1];
 
+// const count = countOccurrences(numbers, 1);
 
+// console.log(count);
 
+// function countOccurrences(array, searchElement) {
+//   // // 1st method - loop
+//   // let count = 0;
+//   // for (let element of array) 
+//   //   if (element === searchElement)
+//   //     count++;
+//   // return count;
 
+//   return array.reduce((accumulator, current) => {
+//     const occurrence = (current === searchElement) ? 1 : 0;
+//     console.log(accumulator, current, searchElement);
+//     return accumulator + occurrence;
+//   }, 0);
+// }
+ 
 
+// Exercise 6 - Get Max
 
+// const numbers = [1, 2, 3, 4];
 
+// const max = getMax([]);
 
+// console.log(max);
 
+// function getMax(array) {
+//   if (array.length === 0) return undefined;
+  
+//   // 1st method
+//   // let max = array[0];
 
+//   // for (let i = 1; i < array.length; i++) {
+//   //   if (array[i] > max)
+//   //     max = array[i];
+//   // }
 
+//   // return max;  
+
+//   // 2nd - Reduce method -- if we wna get single method in result of iterating an array, we should think bout using reduce method
+
+//   return array.reduce((a, b) => (a > b) ? a : b);
+// }
+
+// Movies
 
 
 
