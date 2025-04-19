@@ -64,9 +64,9 @@
 
 // 4 Emptying an array
 // let numbers = [1, 2, 3, 4]
-// let another = numbers;
+// let sortedMovies = numbers;
 
-// Solution 1 -> 2nd (valid if we don't have another variable pointing to array)
+// Solution 1 -> 2nd (valid if we don't have sortedMovies variable pointing to array)
 // numbers = [];
 
 // // Solution 2 -> 1st
@@ -79,7 +79,7 @@
 // while (numbers.length > 0)
 //   numbers.pop();
 
-// console.log(another);
+// console.log(sortedMovies);
 // console.log(numbers);
 
 // 5 Combining array
@@ -144,6 +144,7 @@
 //   { id: 1, name: 'Node.js' },
 //   { id: 2, name: 'javaScript' }
 // ];
+
 // courses.sort(function(a, b) {
 //   // a < b => -1
 //   // a > b => 1
@@ -339,7 +340,40 @@
 //   return array.reduce((a, b) => (a > b) ? a : b);
 // }
 
-// Movies
+
+// Exercise 7 - Movies
+
+const movies = [
+  { title: 'a', year: 2018, rating: 4.5 },
+  { title: 'b', year: 2018, rating: 4.7 },
+  { title: 'c', year: 2018, rating: 3 },
+  { title: 'd', year: 2017, rating: 4.5 }
+];
+
+  // const titles = movies
+  //   .filter(m => m.year === 2018 && m.rating >= 4)
+  //   .sort((a, b) => a.rating - b.rating)
+  //   .reverse()
+  //   .map(m => m.title)
+    
+  // console.log(titles);
+    
+  const sortedMovies = [];
+
+  movies
+  .find(obj => {
+    if (obj.year === 2018 && obj.rating > 4)
+      sortedMovies.push(obj);
+  })
+  const titles = sortedMovies.map( m => m.title);
+  
+  console.log(titles);    
+
+
+
+
+
+
 
 
 
