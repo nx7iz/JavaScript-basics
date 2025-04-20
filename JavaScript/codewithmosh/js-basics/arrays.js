@@ -1,4 +1,3 @@
-
 // 1. Adding elements to array
 // const numbers = [3, 4];
 
@@ -14,7 +13,6 @@
 
 // console.log(numbers);
 
-
 // 2. Finding elements (primitive)
 // const numbers = [ 1, 2, 3, 1, 4 ];
 // console.log(numbers.indexOf(1, 2));
@@ -26,7 +24,7 @@
 
 // 2a. Finding elements (objects --> reference)
 
-// const courses = [ 
+// const courses = [
 //   { id: 1, name: 'a'},
 //   { id: 2, name: 'b'},
 //   { id: 3, name: 'c'}
@@ -39,7 +37,7 @@
 // });
 
 // Arrow function synatx when we pass funtion as a parameter
-// const course1 = courses.find(course => course.name === 'a'); 
+// const course1 = courses.find(course => course.name === 'a');
 // const course2 = courses.find(course => course.id === 2);
 // console.log(course2);
 
@@ -50,7 +48,7 @@
 // const last = numbers.pop();
 // console.log(numbers);
 // console.log(last);
- 
+
 // // Beginning
 // const first = numbers.shift();
 // console.log(numbers);
@@ -60,7 +58,6 @@
 // const middle = numbers.splice(2, 2);
 // console.log(numbers);
 // console.log(middle);
-
 
 // 4 Emptying an array
 // let numbers = [1, 2, 3, 4]
@@ -119,8 +116,7 @@
 // // Apprach 2
 // numbers.forEach((number, index) => console.log(index, number));
 
-
-// 8 Joining arrays        
+// 8 Joining arrays
 // const numbers = [1, 2, 3];
 // const joined = numbers.join(',');
 // console.log(joined);
@@ -159,7 +155,6 @@
 
 // console.log(courses);
 
-
 // 10 Testing elements of an array
 // const numbers = [-1, -2, 2, -3];
 // every() -> checks every element
@@ -173,7 +168,6 @@
 
 // console.log(atLeastOnePositive);
 
-
 // 11 Filtering an array
 // const number = [1, -1, 2, 3];
 
@@ -181,24 +175,22 @@
 
 // console.log(filtered);
 
-
 // 12 Mapping an array
 
 // const numbers = [1, -1, 2, 3];
-// // Chaining
+// Chaining
 // const items = numbers
 //   .filter(n => n >= 0)
 //   .map(n => ({ value: n}))
 //   .filter(obj => obj.value > 1)
 //   .map(obj => obj.value);
 
-// // const items = filtered.map(n => ({ value: n}));
+// const items = filtered.map(n => ({ value: n}));
 
-// // const html ='<ul>' + items.join('') + '</ul>';
+// const html ='<ul>' + items.join('') + '</ul>';
 
 // console.log(items);
-// // console.log(html);
-
+// console.log(html);
 
 // 13 Reducing an array
 
@@ -208,14 +200,11 @@
 // // for (let n of numbers)
 // //   sum += n;
 
-
 // const sum = numbers1.reduce(
 //   (accumulator, currentValue) => accumulator + currentValue
 // );
 
 // console.log(sum);
-
-
 
 // Exercise 1 - Array from Range
 // const numbers = arrayFromRange(1, 4);
@@ -232,22 +221,19 @@
 //   return output;
 // }
 
- 
-
 // Exercise 2 - Includes
 
 // const numbers = [1, 2, 3, 4];
 
 // console.log(includes(numbers, 2));
 // // for in gives the index
-// // for of gives the value at that index 
+// // for of gives the value at that index
 // function includes(array, searchElement) {
 //   for (let element of numbers)
-//     if (searchElement === element) 
+//     if (searchElement === element)
 //       return true;
 //   return false;
 // }
-
 
 // Exercise 3 - Except
 // const numbers = [1, 2, 3, 4, 1, 1];
@@ -258,14 +244,12 @@
 // console.log(output);
 
 // function except(array, excluded) {
-//   const output = []; 
+//   const output = [];
 //   for (let element of array)
 //     if (!excluded.includes(element))
 //       output.push(element);
 //   return output ;
 // }
-
-
 
 // Exercise 4 - Moving an Element
 
@@ -281,7 +265,7 @@
 //   if (position >= array.length || position < 0){
 //     console.error("Invalid offset");
 //     return;
-//   }  
+//   }
 
 //     let output = [...array];
 //     output.splice(index, 1);
@@ -301,7 +285,7 @@
 // function countOccurrences(array, searchElement) {
 //   // // 1st method - loop
 //   // let count = 0;
-//   // for (let element of array) 
+//   // for (let element of array)
 //   //   if (element === searchElement)
 //   //     count++;
 //   // return count;
@@ -312,7 +296,6 @@
 //     return accumulator + occurrence;
 //   }, 0);
 // }
- 
 
 // Exercise 6 - Get Max
 
@@ -324,7 +307,7 @@
 
 // function getMax(array) {
 //   if (array.length === 0) return undefined;
-  
+
 //   // 1st method
 //   // let max = array[0];
 
@@ -333,47 +316,37 @@
 //   //     max = array[i];
 //   // }
 
-//   // return max;  
+//   // return max;
 
 //   // 2nd - Reduce method -- if we wna get single method in result of iterating an array, we should think bout using reduce method
 
 //   return array.reduce((a, b) => (a > b) ? a : b);
 // }
 
-
 // Exercise 7 - Movies
 
-const movies = [
-  { title: 'a', year: 2018, rating: 4.5 },
-  { title: 'b', year: 2018, rating: 4.7 },
-  { title: 'c', year: 2018, rating: 3 },
-  { title: 'd', year: 2017, rating: 4.5 }
-];
+// const movies = [
+//   { title: 'a', year: 2018, rating: 4.5 },
+//   { title: 'b', year: 2018, rating: 4.7 },
+//   { title: 'c', year: 2018, rating: 3 },
+//   { title: 'd', year: 2017, rating: 4.5 }
+// ];
 
-  // const titles = movies
-  //   .filter(m => m.year === 2018 && m.rating >= 4)
-  //   .sort((a, b) => a.rating - b.rating)
-  //   .reverse()
-  //   .map(m => m.title)
-    
-  // console.log(titles);
-    
-  const sortedMovies = [];
+// const titles = movies
+//   .filter(m => m.year === 2018 && m.rating >= 4)
+//   .sort((a, b) => a.rating - b.rating)
+//   .reverse()
+//   .map(m => m.title)
 
-  movies
-  .find(obj => {
-    if (obj.year === 2018 && obj.rating > 4)
-      sortedMovies.push(obj);
-  })
-  const titles = sortedMovies.map( m => m.title);
-  
-  console.log(titles);    
+// console.log(titles);
 
+// const sortedMovies = [];
 
+// movies
+// .find(obj => {
+//   if (obj.year === 2018 && obj.rating > 4)
+//     sortedMovies.push(obj);
+// })
+// const titles = sortedMovies.map( m => m.title);
 
-
-
-
-
-
-
+// console.log(titles);
