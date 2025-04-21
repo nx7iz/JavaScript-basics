@@ -17,7 +17,6 @@
 //   console.log('run');
 // };
 
-
 // Arguments
 // function sum() {
 //   let total = 0;
@@ -27,20 +26,18 @@
 //   return total;
 // }
 
-
 // Rest operator (...parameter)
 // function sum(discount, ...prices) {
 
-//   const total = prices.reduce((a, b) => a + b);  
+//   const total = prices.reduce((a, b) => a + b);
 //   return total * (1 - discount);
 // }
 
 // console.log(sum(0.1, 20, 30));
 
-
 // Default Parameters
 // function interest(principal, rate = 3.5, years = 5) {
-  
+
 //   // rate = rate || 3.5;
 //   // years = years || 5;
 
@@ -50,26 +47,80 @@
 
 // console.log(interest(10000));
 
-
 // Getters Setters
 
-const person = {
-  firstName: 'Ruxus',
-  lastName: 'Arceus',
-  get fullName() {
-    return `${person.firstName} ${person.lastName}`
-  },
-  set fullName(value) {
-    const parts = value.split(' ');
-    this.firstName = parts[0];
-    this.lastName = parts[1];
-  }
-};
+// const person = {
+//   firstName: 'Ruxus',
+//   lastName: 'Arceus',
+//   get fullName() {
+//     return `${person.firstName} ${person.lastName}`
+//   },
+//   set fullName(value) {
+//     const parts = value.split(' ');
+//     this.firstName = parts[0];
+//     this.lastName = parts[1];
+//   }
+// };
 
-person.fullName = 'Zaheer Abbas';
+// person.fullName = 'Helios Liqx'; // value to the set method
 
-// getters => access properties
-// setters => change (mutate) them
+// // split --> string to array
 
-console.log(person);
+// // getters => access properties
+// // setters => change (mutate) them
+
+// console.log(person);
+
+
+// Try and Catch --> Defensive programming
+// const person = {
+//   firstName: "Ruxus",
+//   lastName: "Arceus",
+//   get fullName() {
+//     return `${person.firstName} ${person.lastName}`;
+//   },
+//   set fullName(value) {
+//     // const e = new Error(); --> error
+//     // throw e; --> Exception
+
+//     if (typeof value !== "string") throw new Error("Value is not a string.");
+
+//     const parts = value.split(" ");
+//     if (parts.length !== 2) throw new Error("Enter a first and last name");
+
+//     this.firstName = parts[0];
+//     this.lastName = parts[1];
+//   },
+// };
+// try {
+//   person.fullName = "";
+// } catch (e) {
+//   alert(e);
+// }
+
+// console.log(person);
+
+
+// Local vs Global scope
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
