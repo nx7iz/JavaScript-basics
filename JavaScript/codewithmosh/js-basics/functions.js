@@ -71,7 +71,6 @@
 
 // console.log(person);
 
-
 // Try and Catch --> Defensive programming
 // const person = {
 //   firstName: "Ruxus",
@@ -100,27 +99,18 @@
 
 // console.log(person);
 
-
 // Local vs Global scope
 
-   
+const color = "red";
 
+function start() {
+  const message = "hi";
+  const color = 'blue';
+  console.log(color);
+}
 
+function stop() {
+  const message = "bye";
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+start();
