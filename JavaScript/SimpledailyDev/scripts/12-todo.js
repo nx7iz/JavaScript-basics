@@ -16,6 +16,7 @@ function renderTodoList() {
     const { name, dueDate } = todoObject;
     const html = 
 
+    
     `
       <div>${name}</div>
       <div>${dueDate}</div>
