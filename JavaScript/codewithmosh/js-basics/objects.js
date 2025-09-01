@@ -86,11 +86,11 @@
 
 
 
-const circle = {
-   radius: 1,
-   draw() {
-   }
-};
+// const circle = {
+//    radius: 1,
+//    draw() {
+//    }
+// };
 
 // Cloning objects
 // 1. For in

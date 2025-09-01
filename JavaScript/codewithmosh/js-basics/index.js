@@ -1,14 +1,11 @@
-
 // // variables
 // // let name = 'Ruxus';
 // // console.log(name);
-
 
 // // constants
 // const interestRate = 0.3;
 // // interestRate = 1;
 // console.log(interestRate);
-
 
 // /*
 //  Primitives / value types
@@ -24,7 +21,7 @@
 // let firstName; // undefined
 // let lastName = null; // null
 
-// // Static 
+// // Static
 // // string name = 'Ruxus';
 
 // // Dynamic
@@ -45,7 +42,7 @@
 // };
 // let favColor = 'color';
 // person[favColor] = 'red';
-// console.log(person);  
+// console.log(person);
 
 // // Dot notation
 // person.name = 'Arceus';
@@ -55,7 +52,7 @@
 // person['name'] = 'Ruxus';
 // let selection = 'name';
 // person[selection] = 'Laxie';
-// console.log(person['name']); 
+// console.log(person['name']);
 
 // // Arrays (object) - data structure
 // let selectedColors = ['red', 'blue'];
@@ -63,7 +60,7 @@
 // selectedColors[3] = 3;
 // selectedColors[4] = true;
 // console.log(selectedColors);
-// console.log(selectedColors.length);  
+// console.log(selectedColors.length);
 
 // // Funtions
 // function greet(name, lastName) {
@@ -78,9 +75,8 @@
 // let number = square(3);
 // console.log(number);
 
-
 // Operators
-    
+
 // let x = 10;
 // let y = 3;
 
@@ -100,14 +96,13 @@
 // console.log(x--);
 // console.log(x);
 
-
-// Assignment 
+// Assignment
 
 // x += 5;
 // x *= 3;
 // console.log(x);
 
-// Comparison 
+// Comparison
 // Relational
 // console.log(x >= 10);
 // console.log(x < 0);
@@ -122,15 +117,13 @@
 // console.log('10' == 10);
 // console.log(true == 0);
 
-
-// Ternary 
+// Ternary
 
 // let points = 110;
 // let type = points > 100 ? 'gold' : 'silver';
 // console.log(type);
 
-
-// Logical operators 
+// Logical operators
 
 // //1. AND (&&)
 // console.log(true && false);
@@ -139,7 +132,6 @@
 // console.log(true || false);
 // //3. NOT (!)
 // console.log(true != true);
-
 
 // Falsy (false)
 // undefined
@@ -150,7 +142,6 @@
 // NaN (Not a Number)
 
 // Anything not falsy --> Truthy
-
 
 // let userColor = undefined;
 // let defaultColor = 'blue';
@@ -166,7 +157,7 @@
 // console.log(1 | 2); // Bitwise OR (|)
 // console.log(1 & 2); // Bitwise AND (&)
 
-// Predence 
+// Predence
 // x =( 2 + 3) * 4;
 // console.log(x);
 
@@ -180,3 +171,4 @@
 // console.log('After',a);
 // console.log(b);
 
+// console.log(1)

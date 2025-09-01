@@ -1,3 +1,4 @@
+// array.forEach(element => {
 // 1. Adding elements to array
 // const numbers = [3, 4];
 
@@ -350,3 +351,5 @@
 // const titles = sortedMovies.map( m => m.title);
 
 // console.log(titles);
+
+// });
